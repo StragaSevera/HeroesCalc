@@ -1,0 +1,22 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KingsBountyLib", "KingsBountyLib\KingsBountyLib.csproj", "{444E9968-9A3B-4BED-A437-5B61952EF927}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KingsBountyLib.Test", "KingsBountyLib.Test\KingsBountyLib.Test.csproj", "{1E9DC7C3-AB8B-44AB-A4F6-CF8CDB58E65F}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{444E9968-9A3B-4BED-A437-5B61952EF927}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{444E9968-9A3B-4BED-A437-5B61952EF927}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{444E9968-9A3B-4BED-A437-5B61952EF927}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{444E9968-9A3B-4BED-A437-5B61952EF927}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1E9DC7C3-AB8B-44AB-A4F6-CF8CDB58E65F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1E9DC7C3-AB8B-44AB-A4F6-CF8CDB58E65F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1E9DC7C3-AB8B-44AB-A4F6-CF8CDB58E65F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1E9DC7C3-AB8B-44AB-A4F6-CF8CDB58E65F}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
