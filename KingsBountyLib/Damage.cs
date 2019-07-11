@@ -16,7 +16,7 @@ namespace KingsBountyLib
             return $"({Min} .. {Max})";
         }
 
-        public bool Equals(Damage other)
+        private bool Equals(Damage other)
         {
             return Min.Equals(other.Min) && Max.Equals(other.Max);
         }
@@ -32,6 +32,26 @@ namespace KingsBountyLib
             {
                 return (Min.GetHashCode() * 397) ^ Max.GetHashCode();
             }
+        }
+
+        public static bool operator ==(Damage a, Damage b)
+        {
+            return a.Equals(b);
+        }
+
+        public static bool operator !=(Damage a, Damage b)
+        {
+            return !(a == b);
+        }
+
+        public static Damage operator *(Damage dmg, double c)
+        {
+            return new Damage(dmg.Min * c, dmg.Max * c);
+        }
+
+        public static Damage operator *(double c, Damage dmg)
+        {
+            return dmg * c;
         }
     }
 }
