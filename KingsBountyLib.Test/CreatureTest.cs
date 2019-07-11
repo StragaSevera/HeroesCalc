@@ -16,7 +16,7 @@ namespace KingsBountyLib.Test
         {
             var unit = new Creature(1, 1, 1, 2);
             Damage damage = unit.PureDamage(unit);
-            Assert.That(damage, Is.Damage(new Damage(1, 1.999)));
+            Assert.That(damage, Is.Damage(new Damage(1, 2)));
         }
     }
 }

@@ -15,5 +15,23 @@ namespace KingsBountyLib
         {
             return $"({Min} .. {Max})";
         }
+
+        public bool Equals(Damage other)
+        {
+            return Min.Equals(other.Min) && Max.Equals(other.Max);
+        }
+
+        public override bool Equals(object obj)
+        {
+            return obj is Damage other && Equals(other);
+        }
+
+        public override int GetHashCode()
+        {
+            unchecked
+            {
+                return (Min.GetHashCode() * 397) ^ Max.GetHashCode();
+            }
+        }
     }
 }
